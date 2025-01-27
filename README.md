@@ -39,12 +39,19 @@ ATS Score Checker is a web-based tool designed to evaluate the compatibility of 
 
 ---
 
+## Tools
+
+1. VSCode
+2. ChatGpt
+
+---
+
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/ats-score-checker.git
+   git clone https://github.com/Skr99/ats-score-checker.git
    cd ats-score-checker
    ```
 
