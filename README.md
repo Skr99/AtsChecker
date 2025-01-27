@@ -51,8 +51,8 @@ ATS Score Checker is a web-based tool designed to evaluate the compatibility of 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Skr99/ats-score-checker.git
-   cd ats-score-checker
+   git clone https://github.com/Skr99/AtsChecker.git
+   cd AtsChecker
    ```
 
 2. Set up a Python virtual environment (recommended):
