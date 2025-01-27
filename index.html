@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Score Checker</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center">
+                        <h3>Upload Resume for ATS Score</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="upload-form" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="resume" class="form-label">Select Resume (PDF, DOCX)</label>
+                                <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.docx" required>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="job-desc-checkbox">
+                                <label class="form-check-label" for="job-desc-checkbox">
+                                    Include Job Description
+                                </label>
+                            </div>
+                            <div class="mb-3 d-none" id="job-desc-container">
+                                <label for="job-desc" class="form-label">Job Description</label>
+                                <textarea class="form-control" id="job-desc" name="job_desc" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Check ATS Score</button>
+                        </form>
+                        <div class="mt-4 text-center">
+                            <p id="status-message" class="text-muted">Please upload your resume to check the ATS score.</p>
+                            <!-- ATS Score Section -->
+                            <div id="ats-score" class="d-none">
+                                <h4>ATS Score: <span id="score">0</span>%</h4>
+                                <p>Your resume has been analyzed for ATS compatibility.</p>
+                            </div>
+                            <!-- Error message display -->
+                            <div id="error-message" class="d-none text-danger"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
